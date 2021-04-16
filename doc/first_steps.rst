@@ -147,7 +147,6 @@ and the current recipe versions can be pinned::
   [buildout]
   parts = openerp
   versions = versions
-  find-links = http://download.gna.org/pychart/
 
   [openerp]
   recipe = anybox.recipe.openerp[bzr]:server
@@ -171,6 +170,7 @@ and the current recipe versions can be pinned::
   psycopg2 = 2.4.4
   pydot = 1.0.28
   pyparsing = 1.5.6
+  Python-Chart = 1.39
   python-dateutil = 1.5
   python-ldap = 2.4.9
   python-openid = 2.2.5
@@ -209,7 +209,6 @@ custom addon hosted on Bitbucket::
     [buildout]
     parts = openerp 
     versions = versions
-    find-links = http://download.gna.org/pychart/
     
     [openerp]
     recipe = anybox.recipe.openerp:server
@@ -226,9 +225,9 @@ custom addon hosted on Bitbucket::
     lxml = 2.3.3
     mako = 0.6.2
     psycopg2 = 2.4.4
-    pychart = 1.39
     pydot = 1.0.28
     pyparsing = 1.5.6
+    Python-Chart = 1.39
     python-dateutil = 1.5
     python-ldap = 2.4.9
     python-openid = 2.2.5
@@ -262,7 +261,6 @@ listening on 2 different ports, and 2 web clients::
     parts = openerp1 web1 openerp2 web2
     #allow-picked-versions = false
     versions = versions
-    find-links = http://download.gna.org/pychart/
     
     [openerp1]
     recipe = anybox.recipe.openerp:server
@@ -301,9 +299,9 @@ listening on 2 different ports, and 2 web clients::
     mako = 0.4.2
     nose = 1.1.2
     psycopg2 = 2.4.2
-    pychart = 1.39
     pydot = 1.0.25
     pyparsing = 1.5.6
+    Python-Chart = 1.39
     python-dateutil = 1.5
     pytz = 2012b
     pywebdav = 0.9.4.1

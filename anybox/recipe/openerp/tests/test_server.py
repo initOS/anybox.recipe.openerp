@@ -178,7 +178,7 @@ class TestServer(RecipeTestCase):
         self.recipe.version_detected = '6.1-1'
         self.recipe.merge_requirements()
         self.assertEquals(set(self.recipe.requirements),
-                          set(['pychart', 'anybox.recipe.openerp',
+                          set(['anybox.recipe.openerp',
                                'Pillow', 'openerp']))
 
     def test_merge_requirements_new_project_name(self):
@@ -188,7 +188,7 @@ class TestServer(RecipeTestCase):
         self.recipe.version_detected = '8.0'
         self.recipe.merge_requirements()
         self.assertEquals(set(self.recipe.requirements),
-                          set(['pychart', 'anybox.recipe.openerp',
+                          set(['anybox.recipe.openerp',
                                'Pillow', 'oodooo']))
 
     def test_merge_requirements_PIL(self):
